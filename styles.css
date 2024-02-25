@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --blk: #0D0D0D0D;
+    --white: #F2F2F2;
+    --blue: #7ABFBF;
+    --rgba-blue: rgba(122, 191 ,191, .5);
+    --orange: #EB5428;
+
+    font-family: "Bebas Neue","Montserrat", sans-serif;
+    
+}
+
+html{
+    background-color: var(--rgba-blue);
+    font-family: "Bebas Neue","Montserrat", sans-serif;
+}
+body{
+    width: 414px;
+    background-color: var(--white);
+    margin: 0 auto;
+}
+main{
+    margin-top: 20px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+}
+p{
+    font-size: 16px;
+}
+dd , dt{
+    font-size: 16px;
+
+}
+dt{
+    clear: both;
+}
+header{
+    margin-top: 50px;
+    padding-top: 80px;
+}
+header h2{
+    display: flex;
+    justify-content: center;
+}
+header p{
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+header a{
+    text-decoration: none;
+    color: var(--orange);
+}
+header li{
+    list-style: none;
+    display: inline-block;
+}
+header svg{
+    position: relative;
+    left: 50px;
+}
+li p{
+    position: relative;
+    left: 50px;
+}
+header img{
+    width: 414px;
+    height: 100%;
+    margin-bottom: 15px;
+}
+#details h2{
+    display: flex;
+    justify-content: center;
+}
+#details dl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    padding-left: 10px;
+}
+#details dd{
+    position: relative;
+    left: -120px;
+}
+#details dt{
+    font-weight: bold;
+}
+#ingredients h2{
+    display: flex;
+    justify-content: center;
+}
+#ingredients li{
+    list-style: square;
+    line-height: 30px;
+    position: relative;
+    right: 15px;
+}
+#directions h2{
+    display: flex;
+    justify-content: center;
+}
+#directions li{
+    margin-bottom: 20px;
+    position: relative;
+    right: 15px;
+}
+#sides{
+    background-color: var(--blue);
+}
+#sides h2{
+    display: flex;
+    justify-content: center;
+}
+#sides div{
+    display: flex;
+    flex-direction: column;
+}
+#sides img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 20px 0;
+    padding-left: 10px;
+}
+#sides h3 , p{
+    position: relative;
+    left: 20px;
+}
+#sides h2{
+    position: relative;
+    top: 10px;
+}
+#sidesvg h6{
+    visibility: hidden;
+}
+.rating h6{
+    visibility: hidden;
+}
+.rating{
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+}
+.salsarating h6{
+    visibility: hidden;
+}
+.salsarating{
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+}
+.salsarating svg{
+    fill: var(--orange);
+}
+.rating svg{
+    fill: var(--orange);
+}
+.rating svg:last-child{
+    fill: var(--white);
+}
+#sides p:nth-last-child(2){
+    font-weight: bold;
+}
+
+/*nav */
+
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    right: 40px;
+    bottom: 75px;
+}
+nav li{
+    background-color: var(--orange);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5em;
+}
+nav a:hover{
+    background-color: var(--white);
+    color: var(--orange) ;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+[href="#profile"] svg:hover{
+    stroke: var(--orange);
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+#hamburger input{
+    display: block;
+    position: relative;
+    left: 10px;
+    background-color: #EB5428;
+    display: none;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 80px;
+}
+
+.search input{
+    width: 250px;
+    border: 2px solid var(--orange);
+}
+button{
+    background-color: #EB5428;
+    border: 1px solid #EB5428;
+}
+.search svg{
+    stroke: #ffffff;
+}
+nav p{
+    font-size: 20px;
+    
+}
+#hamburger svg{
+    margin: 0 20px 0 20px;
+}
+[href="#home"] svg{
+    position: relative;
+    top: 0;
+    border: 2px solid green;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 414px;
+    background-color: #ffffff;
+    z-index: 1;
+    height: 70px;
+}
+nav h2{
+    visibility: hidden;
+}
+footer{
+    background-color: #ffffff;
+}
