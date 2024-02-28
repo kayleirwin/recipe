@@ -638,7 +638,6 @@ small{
         color: black;
         margin: 0.5in ;
         font-family: sans-serif;
-        columns:2 ;
     }
     img{
         filter: grayscale;
@@ -652,7 +651,5 @@ small{
     a[href]::after{
         content: " (" attr(href) ")";
     }
-    p{
 
-    }
 }
