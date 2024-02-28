@@ -636,20 +636,23 @@ small{
     body{
         background-color: white;
         color: black;
-       
+        margin: 0.5in ;
         font-family: sans-serif;
-    }
-    section{
-         margin: 0.5in ;
+        columns:2 ;
     }
     img{
-        display: none;
+        filter: grayscale;
     }
     svg{
-        display: none;
+        filter: grayscale;
     }
     nav{
         display: none;
     }
+    a[href]::after{
+        content: " (" attr(href) ")";
+    }
+    p{
 
+    }
 }
