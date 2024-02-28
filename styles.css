@@ -636,8 +636,11 @@ small{
     body{
         background-color: white;
         color: black;
-        margin: 0.5in ;
+       
         font-family: sans-serif;
+    }
+    section{
+         margin: 0.5in ;
     }
     img{
         display: none;
